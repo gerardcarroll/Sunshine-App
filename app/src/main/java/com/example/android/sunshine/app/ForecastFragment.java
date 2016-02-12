@@ -25,8 +25,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 /**
  * Created by gcarroll on 12/02/2016. A placeholder fragment containing a simple view.
@@ -85,6 +87,14 @@ public class ForecastFragment extends Fragment {
 
     final ListView listView = (ListView) rootView.findViewById(R.id.listview_forecast);
     listView.setAdapter(forecastAdapter);
+    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+      @Override
+      public void onItemClick(final AdapterView<?> parent, final View view, final int position, final long id) {
+
+        final String forecast = forecastAdapter.getItem(position);
+        Toast.makeText(getActivity(), forecast, Toast.LENGTH_SHORT).show();
+      }
+    });
 
     return rootView;
   }
