@@ -28,4 +28,22 @@
     <!-- Default postal code for location preference [CHAR LIMIT=NONE] -->
     <string name="pref_location_default" translatable="false">94043</string>
 
+    <!-- Default unit -->
+    <string name="pref_units_metric" translatable="false">metric</string>
+
+    <!-- Default unit -->
+    <string name="pref_units_imperial" translatable="false">imperial</string>
+
+    <!-- Key for Unit pref -->
+    <string name="pref_units_key" translatable="false">units</string>
+
+    <!-- Label for Unit pref -->
+    <string name="pref_units_label">Units</string>
+
+    <!-- Label for view location action -->
+    <string name="action_view_location">View Location</string>
+
+    <!-- Label for share action -->
+    <string name="action_view_share">Share</string>
+
 </resources>
